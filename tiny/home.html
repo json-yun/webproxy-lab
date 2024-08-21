@@ -1,7 +1,60 @@
-<html>
-<head><title>test</title></head>
-<body> 
-<img align="middle" src="godzilla.gif">
-Dave O'Hallaron
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+
+    <!-- 구글폰트 -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+
+    <title>Hi</title>
+
+    <!-- style -->
+    <style type="text/css">
+        * {
+            font-family: "Pretendard Variable", sans-serif;
+        }
+
+        .wrap {
+            width: 90%;
+            max-width: 30rem;
+            margin: auto;
+        }
+    </style>
+
+    <title>Hi</title>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="is-flex box" style="justify-content: center;">
+            <video controls>
+                <source src="/videoplayback.mp4" , type="video/mp4">
+            </video>
+        </div>
+
+        <div class="is-flex box" style="justify-content: center;">
+            <form action="/cgi-bin/adder" method="GET">
+                <input class="input m-auto" type="number" name="arg1" pattern="[0-9]*" required
+                    style="width: 4rem;">
+                +
+                <input class="input m-auto" type="number" name="arg2" pattern="[0-9]*" required
+                    style="width: 4rem;">
+                    =
+                <button class="button is-link" type="submit" onclick="">결과 보기</button>
+            </form>
+        </div>
+        <!-- <video controls><source src="/test.mp4", type="video/mp4"></video> -->
+    </div>
 </body>
+
 </html>
